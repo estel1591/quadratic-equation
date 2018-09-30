@@ -12,8 +12,7 @@ module.exports = function solveEquation(equation) {
         let secondX = (-bEquation + Math.sqrt(discriminant) )/(2*aEquation);
         solution.push( Math.round(firstX * 100) / 100 );
         solution.push( Math.round(secondX * 100) / 100 );
-    }
-    
+    }    
     return solution.sort( (a, b) => a - b);
     
 }
